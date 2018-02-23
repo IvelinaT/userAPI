@@ -44,7 +44,7 @@ class UserController
     {
         $users = $this->repository->getAllUsers();
         if(!empty($users)){
-            $response = $response->withJson(['data' => $users], 200);
+            $response = $response->withHeader('X-Total-Count', count($users))->withJson(['data' => $users], 200);
         }else{
             $response= $response->withJson(['errors' => 'Not Found'], 404);
         }
