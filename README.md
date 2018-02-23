@@ -60,7 +60,7 @@ You can also use Postman app to call the API.For Example:
 GET  http://localhost:8181/users to view all users
 GET  http://localhost:8181/users/1 to info for user with id 1
 POST http://localhost:8181/users with parameters [forename, surname, email] to insert new user
-POST http://localhost:8181/users/1  with one or more of the following parameters [forename, surname, email] to update info for user with id 1
+PUT http://localhost:8181/users/1  with one or more of the following parameters [forename, surname, email] to update info for user with id 1
 DELETE http://localhost:8181/users/1 to delete user with id 1
 ```
 
